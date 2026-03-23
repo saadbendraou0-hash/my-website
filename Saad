@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work in Canada</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    color: #ccc;
+}
+
+.btn {
+    background: #3b82f6;
+    padding: 12px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-container {
+    background: #1e293b;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Get a Job in Canada 🇨🇦</h1>
+    <p>We create your CV and apply for jobs for you</p>
+    <button class="btn" onclick="scrollToForm()">Start Now</button>
+</header>
+
+<div class="section">
+    <h2>Our Services</h2>
+    <p>Professional CV + Cover Letter + Job Applications</p>
+</div>
+
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <p>Fast - Professional - Increase your chances</p>
+</div>
+
+<div class="section form-container" id="form">
+    <h2>Start Now</h2>
+    <input type="text" placeholder="Your Name" id="name">
+    <input type="email" placeholder="Your Email" id="email">
+    <textarea placeholder="Your Experience" id="exp"></textarea>
+    <button class="btn" onclick="submitForm()">Submit</button>
+</div>
+
+<footer>
+    <p>Contact us on WhatsApp</p>
+</footer>
+
+<script>
+function scrollToForm() {
+    document.getElementById("form").scrollIntoView({ behavior: "smooth" });
+}
+
+function submitForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    
+    if(name === "" || email === "") {
+        alert("Please fill all fields");
+    } else {
+        alert("Form submitted! We will contact you.");
+    }
+}
+</script>
+
+</body>
+</html>
